@@ -2,14 +2,79 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Prueba Exitosa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela Esperanza | Informativo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body { font-family: Arial; text-align: center; margin-top: 20%; background-color: #f0f0f0; }
-        h1 { color: #2ecc71; }
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1546410531-bb4abcaf501e?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .noticia-card img {
+            height: 200px;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
-    <h1>¡Cloudflare funciona perfectamente!</h1>
-    <p>Si estás viendo esto, la arquitectura estática está correcta.</p>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Escuela Esperanza</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link active" href="#">Inicio</a>
+                <a class="nav-link" href="#noticias">Noticias</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Bienvenidos a la Escuela Esperanza</h1>
+            <p class="lead">Formando el futuro de nuestra comunidad con valores y excelencia.</p>
+        </div>
+    </header>
+
+    <main class="container my-5" id="noticias">
+        <h2 class="text-center mb-4">Últimas Noticias</h2>
+        <div class="row g-4">
+            
+            <div class="col-md-4">
+                <div class="card h-100 noticia-card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Clases">
+                    <div class="card-body">
+                        <h5 class="card-title">Inicio de Año Escolar 2026</h5>
+                        <p class="card-text">Damos la bienvenida a todos nuestros alumnos a este nuevo ciclo lleno de aprendizaje.</p>
+                        <p class="text-muted small">Publicado: 09 Marzo, 2026</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 noticia-card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Reunión">
+                    <div class="card-body">
+                        <h5 class="card-title">Reunión de Apoderados</h5>
+                        <p class="card-text">Se informa que la primera reunión se llevará a cabo el próximo jueves a las 18:00 hrs.</p>
+                        <p class="text-muted small">Publicado: 10 Marzo, 2026</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5" id="contacto">
+        <div class="container text-center">
+            <p>Escuela Esperanza - Dirección Calle Falsa 123, Chile</p>
+            <p>Contacto: contacto@escuelaesperanza.cl | Tel: +56 9 1234 5678</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
